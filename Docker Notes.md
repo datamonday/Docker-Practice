@@ -24,13 +24,13 @@ Docker 提供了底层系统的统一抽象，这使得开发人员可以非常�
 
 
 
-<img src="C:\Users\34123\Desktop\docker\three app in different containers.png" alt="three app in different containers" style="zoom:50%;" />
+<img src="./imgs/three app in different containers.png" alt="three app in different containers" style="zoom:50%;" />
 
 相比之下，**虚拟机管理程序会虚拟化整个系统：从CPU到RAM，再到存储**。**为了支撑这个虚拟化系统，需要安装整个操作系统**。
 
 **虚拟化系统就是运行在一台物理计算机中的完整虚拟化计算机**。
 
-<img src="C:\Users\34123\Desktop\docker\three app in different VMs.png" alt="three app in different VMs" style="zoom:50%;" />
+<img src="./imgs/three app in different VMs.png" alt="three app in different VMs" style="zoom:50%;" />
 
 对于虚拟机，还需要额外一个操作系统来运行程序。相比之下，容器对应用程序共享宿主机OS内核，这样免除了额外的OS开销。显著提升了性能，还可以提高资源利用率，并将计算能力的消耗浪费降至最低。
 
@@ -46,7 +46,7 @@ Docker并非虚拟化。为什么在Windows上安装Docker时需要具备这些�
 
 打开Docker官网：https://www.docker.com/get-started 下载并安装。打开Hyper-V：
 
-![win docker install](C:\Users\34123\Desktop\docker\win docker install.jpg)
+![win docker install](./imgs/win docker install.jpg)
 
 确定之后，按提示重启。
 
@@ -371,7 +371,7 @@ docker.io/library/nginx:1.12-alpine-perl
 
 打开 docker 客户端查看：
 
-![docker pull ngnix](C:\Users\34123\Desktop\docker\docker pull nginx.jpg)
+![docker pull ngnix](./imgs/docker pull nginx.jpg)
 
 这个不同的十六进制数字就是该镜像的关联层。默认情况下，Docker会从Docker Hub拉取镜像。可以手动指定另一个注册服务器，适用于Docker Hub上未提供却存储在其他位置（例如内部部署的托管 Artifactory）的Docker镜像。为此，必须将注册服务器路径附加到镜像名称之前。
 
